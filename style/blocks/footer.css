@@ -1,0 +1,130 @@
+.footer {
+  background-color: #000000;
+  padding: 50px 0;
+  color: #fff;
+}
+
+.footerList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.footerItem {
+  flex: 1 1 250px;
+}
+
+/* footerLeft */
+
+.footerLeft {
+  max-width: 568px;
+  width: 100%;
+}
+
+.footerLogo {
+  margin-bottom: 20px;
+}
+
+.footerListInfo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+
+.footerInfoLeft {
+  display: flex;
+  gap: 25px;
+}
+
+/* footerCentr */
+
+.footerCenter {
+  max-width: 568px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.footerItemTitle {
+  margin-bottom: 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 570px;
+  width: 100%;
+}
+
+.formName {
+  padding: 14px 24px;
+  background-color: #414141;
+  border: none;
+  border-radius: 16px;
+  max-width: 570px;
+  width: 100%;
+}
+
+.formName::placeholder {
+  color: #cacaca;
+}
+
+.formEmail {
+  border: none;
+  padding: 14px 24px;
+  background-color: #414141;
+  border-radius: 16px;
+  max-width: 570px;
+  width: 100%;
+}
+
+.formEmail::placeholder {
+  color: #cacaca;
+}
+
+.formText {
+  border: none;
+  padding: 14px 24px;
+  background-color: #414141;
+  border-radius: 16px;
+  max-width: 570px;
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+}
+
+.formText::placeholder {
+  color: #cacaca;
+}
+
+.formBottom {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.formBtn {
+  color: #ffffff;
+  padding: 19px 52px;
+  border-radius: 16px;
+  background-color: #ff9900;
+}
+
+.customCheckbox {
+}
+
+/* footerRight */
+
+.footerRight {
+  max-width: 568px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footerItemText {
+  max-width: 363px;
+}

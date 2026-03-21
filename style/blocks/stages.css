@@ -1,0 +1,60 @@
+
+
+.stagesTitle {
+  margin-bottom: 32px;
+}
+
+.stagesWrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.stagesContent {
+  max-width: 758px;
+  flex: 1 1 437px;
+}
+
+.stagesContentTitle {
+  margin-bottom: 8px;
+}
+
+.stagesContentText {
+  margin-bottom: 18px;
+}
+
+.stagesContentBlockBtn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.stagesContentBtn {
+  padding: 20px 38px;
+  border-radius: 16px;
+}
+
+.btnLeft {
+  background-color: #ff9900;
+}
+
+.btnRight {
+  border: 1px solid #000000;
+}
+
+.stagesCardImg {
+  flex: 1 1 437px;
+  border-radius: 32px;
+  overflow: hidden;
+  max-width: 870px;
+  min-height: 260px;
+}
+
+.stagesImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}

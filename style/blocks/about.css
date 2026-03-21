@@ -1,0 +1,75 @@
+.aboutTitle {
+  margin-bottom: 20px;
+}
+
+.aboutText {
+  margin-bottom: 50px;
+  max-width: 1235px;
+}
+
+.aboutBlock {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.aboutLeft {
+  max-width: 868px;
+  min-height: 622px;
+  background-color: #1a2a3a;
+  background-image: url("/assets/image/Rectangle2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  flex: 1 1 600px;
+}
+
+.aboutLeftContent {
+  background-color: #00000080;
+  border-radius: 32px;
+  min-height: 196px;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.aboutLeftBtn {
+  padding: 20px 38px;
+  border: 3px solid #ff9900;
+  border-radius: 16px;
+}
+
+.aboutListRight {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 600px;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.aboutItemRight {
+  max-width: 870px;
+  padding: 65px 60px;
+  border: 1px solid #cacaca;
+  border-radius: 32px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  gap: 50px;
+  flex: 1;
+}
+
+.aboutItemRightInfo {
+  max-width: 450px;
+}
+
+.aboutItemTitle {
+  margin-bottom: 8px;
+}
