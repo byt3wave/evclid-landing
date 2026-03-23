@@ -1,0 +1,231 @@
+@media (max-width: 1600px) {
+  .footerleft {
+    max-width: 365px;
+  }
+
+  .footerRight {
+    max-width: 365px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .aboutLeft {
+    max-width: 1170px;
+    width: 100%;
+  }
+
+  .aboutLeft:hover {
+    transform: scale(1.01);
+  }
+
+  .aboutItemRight {
+    max-width: 1170px;
+    width: 100%;
+  }
+
+  .aboutItemRight:hover {
+    transform: scale(1.01);
+  }
+
+  .stagesImgBlock {
+    height: 566px;
+  }
+
+  .footerRight {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* container */
+  .container {
+    padding: 0 50px;
+  }
+
+  /* header */
+  .headerLogo {
+    max-width: 150px;
+  }
+
+  /* hero */
+  .hero {
+    padding: 40px 0;
+  }
+
+  .heroWrapper {
+    padding: 160px 77px;
+    background-image: url("/assets/image/1024hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 688px;
+  }
+
+  .heroTitle {
+    font-size: 60px;
+    margin-bottom: 16px;
+  }
+
+  .heroText {
+    font-size: 20px;
+    margin-bottom: 60px;
+  }
+
+  /* about */
+
+  .about {
+    padding-bottom: 80px;
+  }
+
+  .aboutText {
+    margin-bottom: 60px;
+  }
+
+  .aboutLeft {
+    min-height: 640px;
+  }
+
+  .aboutItemRight {
+    max-width: 924px;
+    min-height: 295px;
+  }
+
+  /* stages */
+
+  .stagesContent {
+    max-width: 437px;
+  }
+
+  .stagesContentText {
+    margin-bottom: 25px;
+  }
+
+  .stagesImgBlock {
+    max-width: 437px;
+    min-height: 689px;
+  }
+
+  /* questions */
+
+  .questionsItem {
+    max-width: 924px;
+    width: 100%;
+  }
+
+  .questionsItemTitle {
+    max-width: 799px;
+  }
+
+  .questionsItemText {
+    max-width: 799px;
+  }
+
+  /* footer */
+
+  .footerCenter {
+    max-width: 541px;
+  }
+
+  .formBtn {
+    max-width: 240px;
+    padding: 19px 37px;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* header */
+  .headerNav {
+    margin-right: 50px;
+  }
+
+  .headerList {
+    gap: 50px;
+  }
+
+  /* stages */
+
+  .stagesContent {
+    max-width: 430px;
+  }
+
+  .stagesImgBlock {
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 992px) {
+  /* header */
+  .header {
+    padding: 17px 0;
+    position: relative;
+  }
+  .headerLogo {
+    max-width: 110px;
+  }
+
+  .headerNav {
+    margin-right: 43px;
+  }
+
+  .headerList {
+    gap: 40px;
+  }
+
+  .headerItemLink {
+    font-size: 16px;
+  }
+
+  /* hero */
+
+  .heroWrapper {
+    padding: 160px 40px;
+    min-height: 662px;
+    border-radius: 24px;
+  }
+
+  .heroTitle {
+    font-size: 50px;
+  }
+
+  .heroText {
+    font-size: 18px;
+  }
+
+  .heroBtn {
+    font-size: 23px;
+  }
+
+  /* about */
+
+  .aboutLeft {
+    border-radius: 24px;
+  }
+  .aboutLeftContent {
+    padding: 34px 40px;
+    border-radius: 24px;
+  }
+
+  .aboutLeftText {
+    margin-right: 47px;
+  }
+
+  .aboutItemRight {
+    border-radius: 24px;
+    padding: 35px 40px;
+    gap: 16px;
+    min-height: 235px;
+  }
+
+  .aboutItemImg {
+    width: 114px;
+    height: 99px;
+  }
+
+  /* stages */
+
+  .stagesWrapper {
+    flex-wrap: wrap-reverse;
+  }
+
+  .stagesImgBlock {
+  }
+}

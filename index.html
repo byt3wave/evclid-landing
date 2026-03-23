@@ -172,12 +172,23 @@
                 <button class="stagesContentBtn btnRight">Договор</button>
               </div>
             </div>
-
-            <img
-              src="assets/image/desctop.png"
-              alt="Ноутбуки"
-              class="stagesImg"
-            />
+            <div class="stagesImgBlock">
+              <picture class="stagesPicture">
+                <source
+                  srcset="/assets/image/stages768.png"
+                  media="(max-width: 992px)"
+                />
+                <source
+                  srcset="assets/image/stages1200.png"
+                  media="(max-width: 1200px)"
+                />
+                <img
+                  src="assets/image/desctop.png"
+                  alt="Ноутбуки"
+                  class="stagesImg"
+                />
+              </picture>
+            </div>
           </div>
         </div>
       </section>
