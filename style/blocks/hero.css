@@ -1,0 +1,58 @@
+.hero {
+  padding: 50px 0;
+}
+
+.heroWrapper {
+  padding: 100px 80px;
+  min-height: 620px;
+  border-radius: 32px;
+  background-color: #1a2a3a;
+  background-image: url("/assets/image/project.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroBlock {
+  max-width: 837px;
+
+  color: #fff;
+}
+
+.heroTitle {
+  margin-bottom: 24px;
+
+  font-weight: 800;
+  font-size: 70px;
+}
+
+.heroText {
+  margin-bottom: 93px;
+
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.heroBtn {
+  background-color: #ff9900;
+  border-radius: 16px;
+  padding: 25px 39px;
+
+  font-weight: 700;
+  font-size: 23px;
+
+  color: #fff;
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+.heroBtn:hover {
+  background-color: #ffb84d;
+}
+
+.heroBtn:focus {
+  background-color: #ffb84d;
+}
+
+.heroBtn:active {
+  background-color: #e1670e;
+}

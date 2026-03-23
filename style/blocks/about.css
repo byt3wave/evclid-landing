@@ -1,10 +1,16 @@
 .aboutTitle {
   margin-bottom: 20px;
+
+  font-weight: 400;
+  font-size: 48px;
 }
 
 .aboutText {
   margin-bottom: 50px;
   max-width: 1235px;
+
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .aboutBlock {
@@ -26,6 +32,12 @@
   display: flex;
   align-items: flex-end;
   flex: 1 1 600px;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.aboutLeft:hover {
+  transform: scale(1.03);
 }
 
 .aboutLeftContent {
@@ -39,10 +51,39 @@
   width: 100%;
 }
 
+.aboutLeftText {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 32px;
+  color: #ffffff;
+  max-width: 433px;
+}
+
 .aboutLeftBtn {
   padding: 20px 38px;
-  border: 3px solid #ff9900;
+  outline: 3px solid #ff9900;
   border-radius: 16px;
+
+  font-weight: 700;
+  font-size: 16px;
+  color: #ffffff;
+
+  transition:
+    background-color 0.2s ease-in-out,
+    outline-color 0.2s ease-in-out;
+}
+
+.aboutLeftBtn:hover {
+  background-color: #ff9900;
+}
+
+.aboutLeftBtn:focus {
+  background-color: #ff9900;
+}
+
+.aboutLeftBtn:active {
+  background-color: #e1670e;
+  outline: 3px solid #e1670e;
 }
 
 .aboutListRight {
@@ -64,12 +105,26 @@
 
   gap: 50px;
   flex: 1;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+.aboutItemRight:hover {
+  transform: scale(1.03);
 }
 
 .aboutItemRightInfo {
-  max-width: 450px;
+  max-width: 452px;
 }
 
 .aboutItemTitle {
   margin-bottom: 8px;
+
+  font-size: 24px;
+  line-height: 100%;
+}
+
+.aboutItemText {
+  font-size: 16px;
+  line-height: 32px;
 }

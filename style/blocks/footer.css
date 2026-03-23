@@ -4,15 +4,11 @@
   color: #fff;
 }
 
-.footerList {
+.footerWrapper {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 32px;
-}
-
-.footerItem {
-  flex: 1 1 250px;
 }
 
 /* footerLeft */
@@ -20,34 +16,84 @@
 .footerLeft {
   max-width: 568px;
   width: 100%;
+  flex: 1 1 250px;
 }
 
 .footerLogo {
   margin-bottom: 20px;
 }
 
-.footerListInfo {
+.footerList {
   display: flex;
   flex-direction: column;
   margin-bottom: 90px;
 }
 
-.footerInfoLeft {
+.footerItemLink {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  color: #cacaca;
+  transition: color 0.3s ease-in-out;
+}
+
+.footerItemLink:hover {
+  color: #ff9900;
+}
+
+.footerItemLink:focus {
+  color: #cacaca;
+  outline: 2px solid #ff9900;
+  outline-offset: 5px;
+}
+
+.footerItemLink:active {
+  outline: none;
+  color: #e1670e;
+}
+
+.footerMesseger {
   display: flex;
   gap: 25px;
+  color: #666666;
+}
+
+.footerImgMesseger {
+  transition: color 0.3s ease-in-out;
+}
+
+.footerImgMesseger:hover {
+  color: #ff9900;
+}
+
+.footerLinkMesseger:focus {
+  outline: 2px solid #ff9900;
+  outline-offset: 5px;
+}
+
+.footerImgMesseger:active {
+  color: #e1670e;
+}
+
+.footerLinkMesseger:active {
+  outline: none;
 }
 
 /* footerCentr */
 
 .footerCenter {
-  max-width: 568px;
+  max-width: 570px;
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.footerItemTitle {
+.footerTitle {
   margin-bottom: 25px;
+
+  font-weight: 400;
+  font-size: 48px;
+  color: #cacaca;
 }
 
 .form {
@@ -65,10 +111,16 @@
   border-radius: 16px;
   max-width: 570px;
   width: 100%;
+  min-height: 60px;
+  color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .formName::placeholder {
   color: #cacaca;
+
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .formEmail {
@@ -78,10 +130,16 @@
   border-radius: 16px;
   max-width: 570px;
   width: 100%;
+  min-height: 60px;
+  color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .formEmail::placeholder {
   color: #cacaca;
+
+  font-size: 16px;
+  line-height: 32px;
 }
 
 .formText {
@@ -93,16 +151,47 @@
   width: 100%;
   min-height: 150px;
   resize: none;
+  margin-bottom: 7px;
+  color: #ffffff;
+  transition: background-color 0.3s ease-in-out;
 }
 
 .formText::placeholder {
   color: #cacaca;
+
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.formName:hover,
+.formEmail:hover,
+.formText:hover {
+  background-color: #666666;
+}
+
+.formName:focus,
+.formEmail:focus,
+.formText:focus {
+  background-color: #666666;
+}
+
+.formName:active,
+.formEmail:active,
+.formText:active {
+  background-color: #666666;
+}
+
+.formName:active::placeholder,
+.formEmail:active::placeholder,
+.formText:active::placeholder {
+  color: #ffffff;
+  transition: color 0.2s ease-in-out;
 }
 
 .formBottom {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 17px;
 }
 
 .formBtn {
@@ -110,9 +199,70 @@
   padding: 19px 52px;
   border-radius: 16px;
   background-color: #ff9900;
+
+  font-weight: 700;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.formBtn:hover {
+  background-color: #ffb84d;
+}
+
+.formBtn:focus {
+  background-color: #ffb84d;
+}
+
+.formBtn:active {
+  background-color: #e1670e;
 }
 
 .customCheckbox {
+  user-select: none;
+  cursor: pointer;
+}
+
+.customCheckboxInput {
+  appearance: none;
+}
+
+.customCheckboxText {
+  position: relative;
+  padding-left: 18px;
+
+  font-size: 16px;
+  line-height: 32px;
+  color: #cacaca;
+}
+
+.customCheckboxText::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #cacaca;
+  transform: translateY(-50%);
+}
+
+.customCheckboxText::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  background-image: url("/assets/image/Rectangle44.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.customCheckboxInput:checked + .customCheckboxText::after {
+  opacity: 1;
 }
 
 /* footerRight */
@@ -125,6 +275,9 @@
   justify-content: flex-end;
 }
 
-.footerItemText {
+.footerText {
   max-width: 363px;
+
+  font-size: 16px;
+  line-height: 32px;
 }

@@ -1,7 +1,8 @@
-
-
 .questionsTitle {
   margin-bottom: 32px;
+
+  font-weight: 400;
+  font-size: 48px;
 }
 
 .questionsList {
@@ -16,8 +17,20 @@
   border: 1px solid #cacaca;
   border-radius: 32px;
   max-width: 568px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.questionsItem:hover {
+  transform: scale(1.05);
 }
 
 .questionsItemTitle {
   margin-bottom: 8px;
+  max-width: 412px;
+  font-size: 24px;
+}
+
+.questionsItemText {
+  font-size: 16px;
+  line-height: 32px;
 }
