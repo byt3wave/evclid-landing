@@ -224,8 +224,381 @@
 
   .stagesWrapper {
     flex-wrap: wrap-reverse;
+    gap: 38px;
+  }
+
+  .stagesContent {
+    max-width: 667px;
+  }
+
+  br {
+    display: none;
   }
 
   .stagesImgBlock {
+    max-width: 668px;
+    min-height: 284px;
+    height: 100%;
+    border-radius: 24px;
+  }
+
+  /* qustions */
+  .questionsItem {
+    padding: 35px 40px;
+  }
+
+  /* footer */
+
+  .footerWrapper {
+    flex-wrap: wrap-reverse;
+    gap: 50px;
+  }
+  .footerLogo {
+    margin-bottom: 16px;
+  }
+
+  .footerList {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+
+  /* header */
+
+  .header {
+    padding: 17px 0 40px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+
+  .headerNav {
+    order: 2;
+    margin-top: 20px;
+    margin-right: 0;
+    width: 100%;
+  }
+
+  .headerList {
+    gap: 75px;
+  }
+
+  /* hero */
+
+  .heroWrapper {
+    padding: 100px 22px;
+    min-height: 598px;
+    border-radius: 16px;
+  }
+
+  .aboutLeft {
+    min-height: 568px;
+    border-radius: 16px;
+  }
+
+  .aboutLeftText {
+    margin-right: 25px;
+    font-size: 14px;
+  }
+
+  .aboutItemRight {
+    border-radius: 16px;
+    padding: 10px 19px;
+    min-height: 238px;
+  }
+
+  .aboutItemTitle {
+    font-size: 18px;
+  }
+
+  .aboutItemText {
+    font-size: 14px;
+  }
+
+  /* stages */
+
+  .stagesWrapper {
+    gap: 5px;
+  }
+
+  /* footer */
+
+  .footerWrapper {
+    justify-content: center;
+  }
+
+  .footerCenter {
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* header */
+  /* Cкролл бар, разобрать подробнее, скролл бар сделан с помощью ИИ */
+
+  .headerNav {
+    overflow-x: auto; /* горизонтальный скролл */
+    -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
+  }
+
+  .headerList {
+    flex-wrap: nowrap;
+    gap: 24px;
+  }
+  .headerNav::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+
+  .headerNav {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE */
+  }
+
+  /* hero */
+
+  .hero {
+    padding: 20px 0 60px;
+  }
+  .heroWrapper {
+    padding: 60px 22px;
+    min-height: 308px;
+    border-radius: 16px;
+  }
+
+  .heroTitle {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+  .heroText {
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 32px;
+  }
+
+  .heroBtn {
+    padding: 13px 28px;
+    font-size: 12px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* about */
+
+  .aboutTitle {
+    font-size: 24px;
+  }
+
+  .aboutText {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 14px;
+  }
+
+  .aboutBlock {
+    gap: 0;
+  }
+
+  .aboutLeft {
+    background-image: none;
+    background-color: inherit;
+    flex-direction: column;
+    min-height: 444px;
+  }
+  .aboutLeftImg {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .aboutLeftContent {
+    background-color: inherit;
+    border-radius: 0;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  .aboutLeftText {
+    color: #000000;
+    margin-right: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+
+  .aboutLeftBtn {
+    padding: 12px 44px;
+    font-size: 12px;
+    color: #ff9900;
+    border-radius: 8px;
+  }
+
+  .aboutItemRight {
+    flex-wrap: wrap;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    gap: 0;
+  }
+
+  .aboutItemImg {
+    width: 64px;
+    height: 49px;
+    object-fit: contain;
+    margin-bottom: 12px;
+  }
+
+  .aboutItemTitle {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .aboutItemText {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  /* stages */
+
+  .stagesTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .stagesWrapper {
+    gap: 16px;
+  }
+
+  .stagesImgBlock {
+    border-radius: 16px;
+    min-height: 160px;
+  }
+
+  .stagesContentTitle {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .stagesContentText {
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 24px;
+  }
+
+  .stagesContentBlockBtn {
+    gap: 48px;
+  }
+
+  .btnLeft {
+    padding: 12px 44px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .btnRight {
+    padding: 12px 32px;
+    border-radius: 8px;
+    font-size: 12px;
+  }
+
+  /* questions */
+
+  .questionsTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .questionsItem {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+  }
+
+  .questionsItemTitle {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 4px;
+  }
+
+  .questionsItemText {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  /* footer */
+
+  .footer {
+    padding: 30px 0;
+  }
+  .footerCenter {
+    align-items: flex-start;
+  }
+
+  .footerTitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .formName {
+    padding: 14px 20px;
+  }
+
+  .formName::placeholder {
+    font-size: 14px;
+  }
+
+  .formEmail {
+    padding: 14px 20px;
+  }
+
+  .formEmail::placeholder {
+    font-size: 14px;
+  }
+
+  .formText {
+    padding: 14px 20px;
+    margin-bottom: 0;
+  }
+
+  .formText::placeholder {
+    font-size: 14px;
+  }
+
+  .formBottom {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 11px;
+  }
+
+  .formBtn {
+    padding: 12px 19px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .footerLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 1px solid #414141;
+    padding-top: 16px;
+  }
+
+  .footerLogo {
+    width: 131px;
+    height: 42px;
+  }
+  .footerMesseger {
+    gap: 16px;
+  }
+
+  .footerImgMesseger {
+    width: 40px;
+    height: 40px;
   }
 }
