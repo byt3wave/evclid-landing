@@ -5,11 +5,12 @@
 .heroWrapper {
   padding: 100px 80px;
   min-height: 620px;
-  border-radius: 32px;
+
   background-color: #1a2a3a;
   background-image: url("/assets/image/project.png");
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 32px;
 }
 
 .heroBlock {
@@ -33,13 +34,13 @@
 }
 
 .heroBtn {
+  padding: 25px 39px;
+
   background-color: #ff9900;
   border-radius: 16px;
-  padding: 25px 39px;
 
   font-weight: 700;
   font-size: 23px;
-
   color: #fff;
 
   transition: background-color 0.2s ease-in-out;

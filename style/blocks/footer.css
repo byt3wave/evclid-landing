@@ -1,6 +1,8 @@
 .footer {
-  background-color: #000000;
   padding: 50px 0;
+
+  background-color: #000000;
+
   color: #fff;
 }
 
@@ -14,9 +16,9 @@
 /* footerLeft */
 
 .footerLeft {
+  flex: 1 1 250px;
   max-width: 568px;
   width: 100%;
-  flex: 1 1 250px;
 }
 
 .footerLogo {
@@ -34,6 +36,7 @@
   font-size: 18px;
   line-height: 36px;
   color: #cacaca;
+
   transition: color 0.3s ease-in-out;
 }
 
@@ -42,19 +45,22 @@
 }
 
 .footerItemLink:focus {
-  color: #cacaca;
   outline: 2px solid #ff9900;
   outline-offset: 5px;
+
+  color: #cacaca;
 }
 
 .footerItemLink:active {
   outline: none;
+
   color: #e1670e;
 }
 
 .footerMesseger {
   display: flex;
   gap: 25px;
+
   color: #666666;
 }
 
@@ -82,10 +88,10 @@
 /* footerCentr */
 
 .footerCenter {
-  max-width: 570px;
-  width: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 570px;
+  width: 100%;
 }
 
 .footerTitle {
@@ -93,6 +99,7 @@
 
   font-weight: 400;
   font-size: 48px;
+
   color: #cacaca;
 }
 
@@ -106,61 +113,66 @@
 
 .formName {
   padding: 14px 24px;
-  background-color: #414141;
-  border: none;
-  border-radius: 16px;
   max-width: 570px;
   width: 100%;
   min-height: 60px;
+
+  background-color: #414141;
+  border: none;
+  border-radius: 16px;
+
   color: #ffffff;
+
   transition: background-color 0.3s ease-in-out;
 }
 
 .formName::placeholder {
-  color: #cacaca;
-
   font-size: 16px;
   line-height: 32px;
+  color: #cacaca;
 }
 
 .formEmail {
-  border: none;
   padding: 14px 24px;
-  background-color: #414141;
-  border-radius: 16px;
   max-width: 570px;
   width: 100%;
   min-height: 60px;
+
+  border: none;
+  background-color: #414141;
+  border-radius: 16px;
+
   color: #ffffff;
+
   transition: background-color 0.3s ease-in-out;
 }
 
 .formEmail::placeholder {
-  color: #cacaca;
-
   font-size: 16px;
   line-height: 32px;
+  color: #cacaca;
 }
 
 .formText {
-  border: none;
   padding: 14px 24px;
-  background-color: #414141;
-  border-radius: 16px;
+  margin-bottom: 7px;
   max-width: 570px;
   width: 100%;
   min-height: 150px;
-  resize: none;
-  margin-bottom: 7px;
+
+  border: none;
+  background-color: #414141;
+  border-radius: 16px;
+
   color: #ffffff;
+
   transition: background-color 0.3s ease-in-out;
 }
 
 .formText::placeholder {
-  color: #cacaca;
-
   font-size: 16px;
   line-height: 32px;
+  color: #cacaca;
 }
 
 .formName:hover,
@@ -173,6 +185,7 @@
 .formEmail:focus,
 .formText:focus {
   background-color: #666666;
+  border: 1px solid #ff9900;
 }
 
 .formName:active,
@@ -185,6 +198,7 @@
 .formEmail:active::placeholder,
 .formText:active::placeholder {
   color: #ffffff;
+
   transition: color 0.2s ease-in-out;
 }
 
@@ -195,13 +209,15 @@
 }
 
 .formBtn {
-  color: #ffffff;
   padding: 19px 52px;
   border-radius: 16px;
+
   background-color: #ff9900;
 
   font-weight: 700;
   font-size: 16px;
+  color: #ffffff;
+
   transition: background-color 0.3s ease-in-out;
 }
 
@@ -228,6 +244,7 @@
 
 .customCheckboxText {
   position: relative;
+
   padding-left: 18px;
 
   font-size: 16px;
@@ -237,28 +254,36 @@
 
 .customCheckboxText::before {
   content: "";
+
   position: absolute;
   left: 0;
   top: 50%;
+
   width: 14px;
   height: 14px;
+
   border: 1px solid #cacaca;
+
   transform: translateY(-50%);
 }
 
 .customCheckboxText::after {
   content: "";
+
   position: absolute;
   left: 0;
   top: 50%;
+
   width: 14px;
   height: 14px;
+
   background-image: url("/assets/image/Rectangle44.svg");
   background-repeat: no-repeat;
   background-position: center;
-  transform: translateY(-50%);
   opacity: 0;
+
   transition: opacity 0.3s;
+  transform: translateY(-50%);
 }
 
 .customCheckboxInput:checked + .customCheckboxText::after {
@@ -268,11 +293,11 @@
 /* footerRight */
 
 .footerRight {
-  max-width: 568px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  max-width: 568px;
+  width: 100%;
 }
 
 .footerText {

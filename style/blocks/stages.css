@@ -1,3 +1,7 @@
+.stages {
+  padding-bottom: 100px;
+}
+
 .stagesTitle {
   margin-bottom: 32px;
 
@@ -7,26 +11,28 @@
 
 .stagesWrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 32px;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 32px;
 }
 
 .stagesContent {
-  max-width: 758px;
   flex: 1 1 437px;
+  max-width: 758px;
 }
 
 .stagesContentTitle {
   margin-bottom: 8px;
+
   font-size: 24px;
   line-height: 32px;
 }
 
 .stagesContentText {
-  max-width: 741px;
   margin-bottom: 18px;
+  max-width: 741px;
+
   font-size: 16px;
   line-height: 32px;
 }
@@ -39,6 +45,7 @@
 
 .stagesContentBtn {
   padding: 20px 38px;
+
   border-radius: 16px;
 }
 
@@ -48,6 +55,7 @@
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
+
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -67,6 +75,7 @@
   border: 1px solid #000000;
 
   font-size: 16px;
+
   transition:
     background-color 0.2s ease-in-out,
     color 0.2s ease-in-out;
@@ -75,12 +84,14 @@
 .btnRight:hover {
   background-color: #666666;
   border: 1px solid #666666;
+
   color: #ffffff;
 }
 
 .btnRight:focus {
   background-color: #666666;
   border: 1px solid #666666;
+
   color: #ffffff;
 }
 
@@ -90,10 +101,11 @@
 
 .stagesImgBlock {
   flex: 1 1 437px;
-  border-radius: 32px;
-  overflow: hidden;
   max-width: 870px;
   min-height: 260px;
+  overflow: hidden;
+
+  border-radius: 32px;
 }
 
 .stagesImg {

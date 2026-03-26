@@ -1,3 +1,7 @@
+.about {
+  padding-bottom: 100px;
+}
+
 .aboutTitle {
   margin-bottom: 20px;
 
@@ -20,18 +24,19 @@
 }
 
 .aboutLeft {
+  display: flex;
+  align-items: flex-end;
+  flex: 1 1 600px;
   max-width: 868px;
   min-height: 622px;
+  overflow: hidden;
+
   background-color: #1a2a3a;
   background-image: url("/assets/image/Rectangle2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border-radius: 32px;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  flex: 1 1 600px;
 
   transition: transform 0.3s ease-in-out;
 }
@@ -45,32 +50,35 @@
 }
 
 .aboutLeftContent {
-  background-color: #00000080;
-  border-radius: 32px;
-  min-height: 196px;
-  padding: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 50px;
+  min-height: 196px;
   width: 100%;
+
+  background-color: #00000080;
+  border-radius: 32px;
 }
 
 .aboutLeftText {
+  max-width: 433px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 32px;
   color: #ffffff;
-  max-width: 433px;
 }
 
 .aboutLeftBtn {
   padding: 20px 38px;
-  outline: 3px solid #ff9900;
-  border-radius: 16px;
 
   font-weight: 700;
   font-size: 16px;
   color: #ffffff;
+
+  outline: 3px solid #ff9900;
+  border-radius: 16px;
 
   transition:
     background-color 0.2s ease-in-out,
@@ -93,22 +101,22 @@
 .aboutListRight {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   flex: 1 1 600px;
   gap: 32px;
-  justify-content: space-between;
 }
 
 .aboutItemRight {
-  max-width: 870px;
-  padding: 65px 60px;
-  border: 1px solid #cacaca;
-  border-radius: 32px;
-  overflow: hidden;
   display: flex;
   align-items: center;
-
-  gap: 50px;
   flex: 1;
+  gap: 50px;
+  max-width: 870px;
+  padding: 65px 60px;
+  overflow: hidden;
+
+  border: 1px solid #cacaca;
+  border-radius: 32px;
 
   transition: transform 0.3s ease-in-out;
 }

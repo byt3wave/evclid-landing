@@ -10,7 +10,7 @@
 
 @media (max-width: 1366px) {
   .aboutLeft {
-    max-width: 1170px;
+    max-width: 1231px;
     width: 100%;
   }
 
@@ -19,7 +19,7 @@
   }
 
   .aboutItemRight {
-    max-width: 1170px;
+    max-width: 1231px;
     width: 100%;
   }
 
@@ -28,7 +28,7 @@
   }
 
   .stagesImgBlock {
-    height: 566px;
+    height: 503px;
   }
 
   .footerRight {
@@ -54,20 +54,24 @@
 
   .heroWrapper {
     padding: 160px 77px;
+    min-height: 688px;
+
+    background-color: #ffffff;
     background-image: url("/assets/image/1024hero.png");
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 688px;
   }
 
   .heroTitle {
-    font-size: 60px;
     margin-bottom: 16px;
+
+    font-size: 60px;
   }
 
   .heroText {
-    font-size: 20px;
     margin-bottom: 60px;
+
+    font-size: 20px;
   }
 
   /* about */
@@ -85,11 +89,14 @@
   }
 
   .aboutItemRight {
-    max-width: 924px;
+    max-width: 1100px;
     min-height: 295px;
   }
 
   /* stages */
+  .stages {
+    padding-bottom: 80px;
+  }
 
   .stagesContent {
     max-width: 437px;
@@ -100,11 +107,14 @@
   }
 
   .stagesImgBlock {
-    max-width: 437px;
+    max-width: 518px;
     min-height: 689px;
   }
 
   /* questions */
+  .questions {
+    padding-bottom: 80px;
+  }
 
   .questionsItem {
     max-width: 924px;
@@ -126,18 +136,18 @@
   }
 
   .formBtn {
-    max-width: 240px;
     padding: 19px 37px;
+    max-width: 240px;
   }
 }
 
 @media (max-width: 1024px) {
   /* header */
-  .headerNav {
+  .nav {
     margin-right: 50px;
   }
 
-  .headerList {
+  .navList {
     gap: 50px;
   }
 
@@ -155,22 +165,26 @@
 @media (max-width: 992px) {
   /* header */
   .header {
-    padding: 17px 0;
     position: relative;
+
+    padding: 17px 0;
+
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
   }
   .headerLogo {
     max-width: 110px;
   }
 
-  .headerNav {
+  .nav {
     margin-right: 43px;
   }
 
-  .headerList {
+  .navList {
     gap: 40px;
   }
 
-  .headerItemLink {
+  .navItemLink {
     font-size: 16px;
   }
 
@@ -179,6 +193,7 @@
   .heroWrapper {
     padding: 160px 40px;
     min-height: 662px;
+
     border-radius: 24px;
   }
 
@@ -197,10 +212,13 @@
   /* about */
 
   .aboutLeft {
+    min-height: 650px;
+
     border-radius: 24px;
   }
   .aboutLeftContent {
     padding: 34px 40px;
+
     border-radius: 24px;
   }
 
@@ -209,10 +227,11 @@
   }
 
   .aboutItemRight {
-    border-radius: 24px;
-    padding: 35px 40px;
     gap: 16px;
+    padding: 35px 40px;
     min-height: 235px;
+
+    border-radius: 24px;
   }
 
   .aboutItemImg {
@@ -228,7 +247,11 @@
   }
 
   .stagesContent {
-    max-width: 667px;
+    max-width: 876px;
+  }
+
+  .stagesContentText {
+    max-width: 876px;
   }
 
   br {
@@ -236,9 +259,10 @@
   }
 
   .stagesImgBlock {
-    max-width: 668px;
+    max-width: 876px;
     min-height: 284px;
     height: 100%;
+
     border-radius: 24px;
   }
 
@@ -271,18 +295,20 @@
 
   .header {
     padding: 17px 0 40px;
+
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;
   }
 
-  .headerNav {
+  .nav {
     order: 2;
     margin-top: 20px;
     margin-right: 0;
     width: 100%;
   }
 
-  .headerList {
+  .navList {
+    justify-content: center;
     gap: 75px;
   }
 
@@ -291,23 +317,27 @@
   .heroWrapper {
     padding: 100px 22px;
     min-height: 598px;
+
     border-radius: 16px;
   }
 
   .aboutLeft {
     min-height: 568px;
+
     border-radius: 16px;
   }
 
   .aboutLeftText {
     margin-right: 25px;
+
     font-size: 14px;
   }
 
   .aboutItemRight {
-    border-radius: 16px;
     padding: 10px 19px;
     min-height: 238px;
+
+    border-radius: 16px;
   }
 
   .aboutItemTitle {
@@ -339,20 +369,21 @@
   /* header */
   /* Cкролл бар, разобрать подробнее, скролл бар сделан с помощью ИИ */
 
-  .headerNav {
+  .nav {
     overflow-x: auto; /* горизонтальный скролл */
     -webkit-overflow-scrolling: touch; /* плавный скролл на iOS */
   }
 
-  .headerList {
+  .navList {
     flex-wrap: nowrap;
+    justify-content: flex-start;
     gap: 24px;
   }
-  .headerNav::-webkit-scrollbar {
+  .nav::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
   }
 
-  .headerNav {
+  .nav {
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* IE */
   }
@@ -365,26 +396,31 @@
   .heroWrapper {
     padding: 60px 22px;
     min-height: 308px;
+
     border-radius: 16px;
   }
 
   .heroTitle {
-    font-size: 20px;
     text-align: center;
     margin-bottom: 6px;
+
+    font-size: 20px;
   }
   .heroText {
-    font-size: 12px;
     text-align: center;
     margin-bottom: 32px;
+
+    font-size: 12px;
   }
 
   .heroBtn {
-    padding: 13px 28px;
-    font-size: 12px;
-    border-radius: 8px;
     display: block;
     margin: 0 auto;
+    padding: 13px 28px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
   }
 
   /* about */
@@ -394,9 +430,10 @@
   }
 
   .aboutText {
+    margin-bottom: 14px;
+
     font-size: 14px;
     line-height: 28px;
-    margin-bottom: 14px;
   }
 
   .aboutBlock {
@@ -404,59 +441,67 @@
   }
 
   .aboutLeft {
-    background-image: none;
-    background-color: inherit;
     flex-direction: column;
     min-height: 444px;
+
+    background-image: none;
+    background-color: inherit;
   }
   .aboutLeftImg {
     display: block;
     margin-bottom: 8px;
   }
   .aboutLeftContent {
-    background-color: inherit;
-    border-radius: 0;
     flex-direction: column;
     justify-content: flex-start;
     padding: 0;
+
+    background-color: inherit;
+    border-radius: 0;
   }
 
   .aboutLeftText {
-    color: #000000;
+    text-align: center;
+    margin-bottom: 12px;
     margin-right: 0;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 28px;
-    margin-bottom: 12px;
-    text-align: center;
+    color: #000000;
   }
 
   .aboutLeftBtn {
     padding: 12px 44px;
+
+    border-radius: 8px;
+
     font-size: 12px;
     color: #ff9900;
-    border-radius: 8px;
   }
 
   .aboutItemRight {
     flex-wrap: wrap;
+    gap: 0;
     padding: 0;
+
     border: none;
     border-radius: 0;
-    gap: 0;
   }
 
   .aboutItemImg {
+    margin-bottom: 12px;
     width: 64px;
     height: 49px;
+
     object-fit: contain;
-    margin-bottom: 12px;
   }
 
   .aboutItemTitle {
+    margin-bottom: 4px;
+
     font-weight: 500;
     font-size: 18px;
-    margin-bottom: 4px;
   }
 
   .aboutItemText {
@@ -467,16 +512,18 @@
   /* stages */
 
   .stagesTitle {
-    font-size: 24px;
     margin-bottom: 20px;
+
+    font-size: 24px;
   }
   .stagesWrapper {
     gap: 16px;
   }
 
   .stagesImgBlock {
-    border-radius: 16px;
     min-height: 160px;
+
+    border-radius: 16px;
   }
 
   .stagesContentTitle {
@@ -485,9 +532,10 @@
   }
 
   .stagesContentText {
+    margin-bottom: 24px;
+
     font-size: 14px;
     line-height: 28px;
-    margin-bottom: 24px;
   }
 
   .stagesContentBlockBtn {
@@ -496,33 +544,40 @@
 
   .btnLeft {
     padding: 12px 44px;
-    font-size: 12px;
+
     border-radius: 8px;
+
+    font-size: 12px;
   }
 
   .btnRight {
     padding: 12px 32px;
+
     border-radius: 8px;
+
     font-size: 12px;
   }
 
   /* questions */
 
   .questionsTitle {
-    font-size: 24px;
     margin-bottom: 20px;
+
+    font-size: 24px;
   }
 
   .questionsItem {
     padding: 0;
-    border-radius: 0;
+
     border: none;
+    border-radius: 0;
   }
 
   .questionsItemTitle {
+    margin-bottom: 4px;
+
     font-weight: 500;
     font-size: 18px;
-    margin-bottom: 4px;
   }
 
   .questionsItemText {
@@ -540,8 +595,9 @@
   }
 
   .footerTitle {
-    font-size: 24px;
     margin-bottom: 20px;
+
+    font-size: 24px;
   }
 
   .formName {
@@ -577,16 +633,19 @@
 
   .formBtn {
     padding: 12px 19px;
-    font-size: 12px;
+
     border-radius: 8px;
+
+    font-size: 12px;
   }
 
   .footerLeft {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 1px solid #414141;
     padding-top: 16px;
+
+    border-top: 1px solid #414141;
   }
 
   .footerLogo {
@@ -600,5 +659,48 @@
   .footerImgMesseger {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about {
+    padding-bottom: 60px;
+  }
+
+  .aboutLeftImg {
+    max-height: 200px;
+    max-width: 290px;
+    width: 100%;
+
+    border-radius: 16px;
+  }
+
+  .aboutLeftText {
+    text-align: start;
+  }
+
+  .aboutLeftBtn {
+    outline: 2px solid #ff9900;
+  }
+
+  .aboutLeftBtn:hover {
+    color: #ffffff;
+  }
+
+  .aboutItemRight {
+    min-height: 252px;
+  }
+
+  .stages {
+    padding-bottom: 60px;
+  }
+
+  .stagesContentBlockBtn {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
+
+  .questions {
+    padding-bottom: 60px;
   }
 }
