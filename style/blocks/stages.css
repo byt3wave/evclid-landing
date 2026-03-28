@@ -97,6 +97,7 @@
 
 .btnRight:active {
   background-color: #000000;
+  border: 1px solid #000000;
 }
 
 .stagesImgBlock {
@@ -111,4 +112,134 @@
 .stagesImg {
   width: 100%;
   height: 100%;
+}
+
+/* media */
+
+@media (max-width: 1366px) {
+  .stagesImgBlock {
+    height: 503px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .stages {
+    padding-bottom: 80px;
+  }
+
+  .stagesContent {
+    max-width: 437px;
+  }
+
+  .stagesContentText {
+    margin-bottom: 25px;
+  }
+
+  .stagesImgBlock {
+    max-width: 518px;
+    min-height: 689px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .stagesContent {
+    max-width: 430px;
+  }
+
+  .stagesImgBlock {
+    max-width: 430px;
+  }
+}
+
+@media (max-width: 992px) {
+  .stagesWrapper {
+    flex-wrap: wrap-reverse;
+    gap: 38px;
+  }
+
+  .stagesContent {
+    max-width: 876px;
+  }
+
+  .stagesContentText {
+    max-width: 876px;
+  }
+
+  br {
+    display: none;
+  }
+
+  .stagesImgBlock {
+    max-width: 876px;
+    min-height: 284px;
+    height: 100%;
+
+    border-radius: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .stagesWrapper {
+    gap: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stagesTitle {
+    margin-bottom: 20px;
+
+    font-size: 24px;
+  }
+  .stagesWrapper {
+    gap: 16px;
+  }
+
+  .stagesImgBlock {
+    min-height: 160px;
+
+    border-radius: 16px;
+  }
+
+  .stagesContentTitle {
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .stagesContentText {
+    margin-bottom: 24px;
+
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .stagesContentBlockBtn {
+    gap: 48px;
+  }
+
+  .btnLeft {
+    padding: 12px 44px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+  }
+
+  .btnRight {
+    padding: 12px 32px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .stages {
+    padding-bottom: 60px;
+  }
+
+  .stagesContentBlockBtn {
+    flex-wrap: nowrap;
+    gap: 10px;
+  }
 }

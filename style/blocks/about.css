@@ -140,3 +140,219 @@
   font-size: 16px;
   line-height: 32px;
 }
+
+/* media */
+
+@media (max-width: 1366px) {
+  .aboutLeft {
+    max-width: 1231px;
+    width: 100%;
+  }
+
+  .aboutLeft:hover {
+    transform: scale(1.01);
+  }
+
+  .aboutItemRight {
+    max-width: 1231px;
+    width: 100%;
+  }
+
+  .aboutItemRight:hover {
+    transform: scale(1.01);
+  }
+}
+
+@media (max-width: 1200px) {
+  .about {
+    padding-bottom: 80px;
+  }
+
+  .aboutText {
+    margin-bottom: 60px;
+  }
+
+  .aboutLeft {
+    min-height: 640px;
+  }
+
+  .aboutItemRight {
+    max-width: 1100px;
+    min-height: 295px;
+  }
+}
+
+@media (max-width: 992px) {
+  .aboutLeft {
+    min-height: 650px;
+
+    border-radius: 24px;
+  }
+  .aboutLeftContent {
+    padding: 34px 40px;
+
+    border-radius: 24px;
+  }
+
+  .aboutLeftText {
+    margin-right: 47px;
+  }
+
+  .aboutItemRight {
+    gap: 16px;
+    padding: 35px 40px;
+    min-height: 235px;
+
+    border-radius: 24px;
+  }
+
+  .aboutItemImg {
+    width: 114px;
+    height: 99px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutLeft {
+    min-height: 568px;
+
+    border-radius: 16px;
+  }
+
+  .aboutLeftText {
+    margin-right: 25px;
+
+    font-size: 14px;
+  }
+
+  .aboutItemRight {
+    padding: 10px 19px;
+    min-height: 238px;
+
+    border-radius: 16px;
+  }
+
+  .aboutItemTitle {
+    font-size: 18px;
+  }
+
+  .aboutItemText {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutTitle {
+    font-size: 24px;
+  }
+
+  .aboutText {
+    margin-bottom: 14px;
+
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .aboutBlock {
+    gap: 0;
+  }
+
+  .aboutLeft {
+    flex-direction: column;
+    min-height: 444px;
+
+    background-image: none;
+    background-color: inherit;
+  }
+  .aboutLeftImg {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .aboutLeftContent {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+
+    background-color: inherit;
+    border-radius: 0;
+  }
+
+  .aboutLeftText {
+    text-align: center;
+    margin-bottom: 12px;
+    margin-right: 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #000000;
+  }
+
+  .aboutLeftBtn {
+    padding: 12px 44px;
+
+    border-radius: 8px;
+
+    font-size: 12px;
+    color: #ff9900;
+  }
+
+  .aboutItemRight {
+    flex-wrap: wrap;
+    gap: 0;
+    padding: 0;
+
+    border: none;
+    border-radius: 0;
+  }
+
+  .aboutItemImg {
+    margin-bottom: 12px;
+    width: 64px;
+    height: 49px;
+
+    object-fit: contain;
+  }
+
+  .aboutItemTitle {
+    margin-bottom: 4px;
+
+    font-weight: 500;
+    font-size: 18px;
+  }
+
+  .aboutItemText {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about {
+    padding-bottom: 60px;
+  }
+
+  .aboutLeftImg {
+    max-height: 200px;
+    max-width: 330px;
+    width: 100%;
+
+    border-radius: 16px;
+  }
+
+  .aboutLeftText {
+    text-align: start;
+  }
+
+  .aboutLeftBtn {
+    outline: 2px solid #ff9900;
+  }
+
+  .aboutLeftBtn:hover {
+    color: #ffffff;
+  }
+
+  .aboutItemRight {
+    min-height: 252px;
+  }
+}
